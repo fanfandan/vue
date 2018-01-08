@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="markdown.min.css">
+</head>
+<style>
+  .a-enter{
+      opacity: 0;
+  }
+  .a-enter-active{
+      transition: all 1s;
+  }
+  .a-enter-to{
+      opacity: 1;
+  }
+  .a-leave{
+      opacity: 1;
+  }
+  .a-leave-active{
+      transition: all 1s;
+  }
+    .a-leave-to{
+        opacity:0;
+    }
+</style>
+<body>
+  <div id="root">
+      <nav>
+          <router-link to="/">导航</router-link>
+          <router-link to="/quick">快速上手</router-link>
+      </nav>
+
+      <transition name="a" mode="out-in">
+           <router-view></router-view>
+      </transition>
+  </div>
+  <script src="component.js"></script>
+  <script src="router.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

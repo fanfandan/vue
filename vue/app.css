@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+a{
+    color: #1b1f23;
+    text-decoration: none;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#root , .root{
+    width:100%;
+    height:100%;
+}
+nav{
+    width:100%;
+    height:40px;
+    background: #ccc;
+    position: fixed;
+    text-align: center;
+    line-height: 40px;
+    z-index: 2;
+}
+.body{
+    width:100%;
+    height:100%;
+    padding-top: 40px;
+}
+.body .left{
+    width:25%;
+    height:100%;
+    border-right: 2px solid black;
+    float: left;
+    overflow: scroll;
+}
+.body .right{
+    width:75%;
+    height:100%;
+    overflow: scroll;
+}
